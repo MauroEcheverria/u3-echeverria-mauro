@@ -39,7 +39,8 @@ Para mi proyecto decidí utilizar <strong>venv</strong> ya que es recomendado si
 ▪ python -m ipykernel install --user --name "u3-echeverria" --display-name "Python 3.11 (u3-echeverria)"
 ```
 📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
-<img src="https://i.postimg.cc/fR6Y3q69/ht-4.jpg" align="center" width = 400px/>
+<img src="https://i.postimg.cc/FHBV4r2k/Screenshot-1.png" align="center" width = 400px/><br><br>
+<img src="https://i.postimg.cc/RVGTgQdR/Screenshot-2.png" align="center" width = 400px/>
 
 
 <h2>👨🏻‍💻 &nbsp; Gestión de dependencias 😃</h2>
@@ -60,6 +61,7 @@ isort==6.0.*
 pre-commit==3.7.*
 nbstripout==0.8.*
 detect-secrets==1.5.*
+scikit-learn==1.7.*
 
 ✍ Comandos para ejecución tanto para DEV y PROD
 
@@ -70,11 +72,27 @@ pip install -r requirements.txt
 pip install -r dev-requirements.txt
 ```
 📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
-<img src="https://i.postimg.cc/fR6Y3q69/ht-4.jpg" align="center" width = 400px/>
+<img src="https://i.postimg.cc/FHRV8dnQ/Screenshot-3.png" align="center" width = 400px/>
 
 
+<h2>👨🏻‍💻 &nbsp; Ejecución de Pruebas 😃</h2>
+Se realizaron los pasos indicados y se ejecutaron dos pruebas, se adjunta captura
+📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
+<img src="https://i.postimg.cc/qMpLcZsq/Screenshot-4.png" align="center" width = 400px/>
 
 
+<h2>👨🏻‍💻 &nbsp; Calidad local con pre-commit 😃</h2>
+Se realizaron los pasos indicados y se ejecutaron dos pruebas, se adjunta captura
+
+```
+pip install pre-commit
+pre-commit install
+pre-commit run --all-files
+```
+
+📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
+<img src="https://i.postimg.cc/1zqbqjSX/Screenshot-5.png" align="center" width = 400px/><br><br>
+<img src="https://i.postimg.cc/0y3LrqLh/Screenshot-6.png" align="center" width = 400px/>
 
 <br><h3>🛠 &nbsp;Fue una tarea muy bien planteada pero larga y densa 😅</h3>
 
