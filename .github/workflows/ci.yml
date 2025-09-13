@@ -28,7 +28,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install -r dev-requirements.txt
 
       # 5. Revisar calidad con Ruff, Black e isort
       - name: Run Ruff
