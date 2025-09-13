@@ -1,0 +1,11 @@
+# entornos
+u3-APELLIDO/
+.venv/
+# python
+__pycache__/
+*.pyc
+# jupyter
+.ipynb_checkpoints/
+# datos / secretos
+data/
+.env
