@@ -66,10 +66,10 @@ scikit-learn==1.7.*
 ✍ Comandos para ejecución tanto para DEV y PROD
 
 # PROD
-pip install -r requirements.txt
+▪ pip install -r requirements.txt
 
 # DEV
-pip install -r dev-requirements.txt
+▪ pip install -r dev-requirements.txt
 ```
 📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
 <img src="https://i.postimg.cc/FHRV8dnQ/Screenshot-3.png" align="center" width = 400px/>
@@ -85,15 +85,45 @@ Se realizaron los pasos indicados y se ejecutaron dos pruebas, se adjunta captur
 Se realizaron los pasos indicados y se ejecutaron dos pruebas, se adjunta captura
 
 ```
-pip install pre-commit
-pre-commit install
-pre-commit run --all-files
+▪ pip install pre-commit
+▪ pre-commit install
+▪ pre-commit run --all-files
 ```
 
 📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍
 <img src="https://i.postimg.cc/1zqbqjSX/Screenshot-5.png" align="center" width = 400px/><br><br>
-<img src="https://i.postimg.cc/0y3LrqLh/Screenshot-6.png" align="center" width = 400px/>
+<img src="https://i.postimg.cc/wTGVNKzp/Screenshot-6.png" align="center" width = 400px/><br><br>
+<img src="https://i.postimg.cc/SjF58VJ6/Screenshot-7.png.png" align="center" width = 400px/><br><br>
+<img src="https://i.postimg.cc/kGtzBLXM/Screenshot-8.png" align="center" width = 400px/><br><br>
+<img src="https://i.postimg.cc/KzWCcmbs/Screenshot-10.png" align="center" width = 400px/>
 
-<br><h3>🛠 &nbsp;Fue una tarea muy bien planteada pero larga y densa 😅</h3>
+<h2>👨🏻‍💻 &nbsp; BONUS...!!! PIP-TOOLS, Badge de Cobertura😃</h2>
+Con el fin de obtener el bonus de los 5pts, se logró realizar el uso de pip-tools y sus dependencias, se muestra lineas de codigo y capturas.
+
+```
+▪ pip install pip-tools
+▪ pip install jupytext
+▪ pip install mypy
+▪ mypy src/
+▪ pip install coverage pytest-cov
+▪ pytest --cov=src --cov-report=xml
+
+▪ Crea cuenta en https://about.codecov.io/ y conecta tu repo.
+▪ Añadi este paso en .github/workflows/ci.yml después de pytest:
+    - name: Run tests with coverage
+        run: pytest --cov=src --cov-report=xml
+
+    - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./coverage.xml
+
+▪ Restart / Run All
+```
+📷 &nbsp; Captura de pantalla como evidencia. &nbsp;🔍<br><br>
+**<ins>Importante:</ins> Se indica que se tuvo que colocar el repositorio de GIT como publico con el fin de poder tener acceso tanto al Bange de cobertura con al ambiente WEB Coverage**.<br><br>
+<img src="https://github.com/MauroEcheverria/u3-echeverria-mauro/actions/workflows/ci.yml/badge.svg" align="center" width = 300px/>
+
+<h3>🛠 &nbsp;Fue una tarea muy bien planteada pero larga y densa 😅</h3>
 
 <img src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" width = 400px>
