@@ -17,6 +17,7 @@
 #
 # Se comentan las lineas de codigo para la generación de gráfico debido a que en los REQUISITOS Y PASOS, usted indica que en el lietral D: NO EMBEBER IMAGENES PESADAS EN EL .ipynb
 
+
 import matplotlib.pyplot as plt
 
 # %%
